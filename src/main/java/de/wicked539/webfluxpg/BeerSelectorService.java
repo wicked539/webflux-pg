@@ -7,9 +7,9 @@ import java.util.Random;
 import java.util.stream.Collectors;
 
 @Service
-public class FooSelectorService {
+public class BeerSelectorService {
 
     public List<Long> getIds() {
-        return new Random(42).longs(5, 0, 50).boxed().collect(Collectors.toList());
+        return new Random().longs(5, 0, 192).boxed().collect(Collectors.toList());
     }
 }

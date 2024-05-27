@@ -3,7 +3,8 @@ package de.wicked539.webfluxpg;
 
 import org.springframework.data.annotation.Id;
 
-public class Foo {
+public class Beer {
+
     @Id
     private Long id;
 
@@ -15,5 +16,13 @@ public class Foo {
 
     public Long getId() {
         return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
